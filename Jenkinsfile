@@ -4,7 +4,10 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        echo "Do something"
+        sh '''
+        echo "Prueba shell"
+        pwd
+        '''
             }
     }
     stage('Test') {
