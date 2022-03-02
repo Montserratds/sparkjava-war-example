@@ -7,6 +7,7 @@ pipeline {
         sh '''
         echo "Prueba shell"
         pwd
+        mvn clean install
         '''
             }
     }
